@@ -1,2 +1,7 @@
 .idea
 .DS_Store
+./assets/bootstrap
+# ./assets/images/**
+node_modules
+package*
+convert.js
