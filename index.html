@@ -2,6 +2,22 @@
 <html lang="fr">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="language" content="fr-FR">
+	<!-- Open Graph -->
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Photographe à Bordeaux – Portraits, Mariages, Concerts & Entreprises" />
+	<meta property="og:description" content="Photographe professionnelle à Bordeaux. Portraits, reportages de mariage, Shooting, Retouches et Album." />
+	<meta property="og:image" content="./assets/images/nina.webp" />
+	<meta property="og:url" content="https://mistero1.github.io/Projet_OC4/" />
+	<meta property="og:site_name" content="Nina Carducci Photographe" />
+	<meta property="og:locale" content="fr_FR" />
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Photographe à Bordeaux – Portraits, Mariages, Concerts & Entreprises" />
+	<meta name="twitter:description" content="Photographe professionnelle basée à Bordeaux. Services de shooting, Retouches et Album." />
+	<meta name="twitter:image" content="./assets/images/nina.webp" />
+
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,8 +29,37 @@
 	<script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script defer src="./assets/maugallery.js"></script>
 	<script defer src="./assets/scripts.js"></script>
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Photographer",
+		"name": "Nina Carducci",
+		"image": "./assets/images/nina.webp",
+		"url": "https://nina-carducci.github.io/",
+		"telephone": "+33556677889",
+		"address": {
+			"@type": "PostalAddress",
+			"streetAddress": "68 avenue Alsace-Lorraine",
+			"addressLocality": "Bordeaux",
+			"postalCode": "33200",
+			"addressCountry": "FR"
+		},
+		"openingHours": "Mo-Fr 10:00-19:00",
+		"geo": {
+			"@type": "GeoCoordinates",
+			"latitude": 44.8465781,
+			"longitude": -0.6091114
+		},
+		"sameAs": [
+			"https://www.instagram.com/ninacarducci.photo/?hl=fr" 
+		],
+		"description": "Photographe professionnelle à Bordeaux spécialisée dans les portraits, mariages, concerts et entreprises.",
+		"priceRange": "€€"
+		}
+	</script>
+
 	<title>Nina Carducci</title>
-	<meta name="description" content="Vous recherchez une photographe professionnelle ? besoin de Shooting photo, retouches ou Album ? Vous êtes au bon endroit !">
+	<meta name="description" content="Photographe professionnelle à Bordeaux spécialisée dans les portraits, mariages, concerts et entreprises. Besoin de Shooting photo, retouches ou Album ? Reservez votre séance photo personnalisée dès aujourd'hui.">
 </head>
 <body>
 <header>
@@ -84,11 +129,11 @@
 		</div>
 	</div>
 	<div class="quote">
-		<figure>
-			<blockquote>
-				<h1 class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</h1>
+		<figure itemscope itemtype="https://schema.org/Quotation">
+			<blockquote cite="https://apprendre-la-photo.fr/citations-photographie/">
+				<p class="quote__text" itemprop="text"> Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</p>
 			</blockquote>
-			<figcaption class="quote__author">- Richard Avedon</figcaption>
+			<figcaption class="quote__author">- <span itemprop="spokenByCharacter">Richard Avedon</span></figcaption>
 		</figure>
 	</div>
 </section>
@@ -129,11 +174,11 @@
 	</div>
 </section>
 <section class="quote" aria-labelledby="quote-text">
-	<figure>
+	<figure itemscope itemtype="https://schema.org/Quotation">
 		<blockquote cite="https://sites.google.com/site/grandsphotographesdu20eme/mccurry-steve">
-			<p id="quote-text" class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</p>
+			<p id="quote-text" class="quote__text" itemprop="text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</p>
 		</blockquote>
-		<figcaption class="quote__author">- Steve McCurry</figcaption>
+		<figcaption class="quote__author">- <span itemprop="spokenByCharacter">Steve McCurry</span></figcaption>
 	</figure>
 </section>
 <section id="contact">
