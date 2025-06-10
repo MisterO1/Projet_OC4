@@ -29,35 +29,6 @@
 	<script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script defer src="./assets/maugallery.js"></script>
 	<script defer src="./assets/scripts.js"></script>
-	<script type="application/ld+json">
-	{
-		"@context": "https://schema.org",
-		"@type": "Photographer",
-		"name": "Nina Carducci",
-		"image": "./assets/images/nina.webp",
-		"url": "https://nina-carducci.github.io/",
-		"telephone": "+33556677889",
-		"address": {
-			"@type": "PostalAddress",
-			"streetAddress": "68 avenue Alsace-Lorraine",
-			"addressLocality": "Bordeaux",
-			"postalCode": "33200",
-			"addressCountry": "FR"
-		},
-		"openingHours": "Mo-Fr 10:00-19:00",
-		"geo": {
-			"@type": "GeoCoordinates",
-			"latitude": 44.8465781,
-			"longitude": -0.6091114
-		},
-		"sameAs": [
-			"https://www.instagram.com/ninacarducci.photo/?hl=fr" 
-		],
-		"description": "Photographe professionnelle à Bordeaux spécialisée dans les portraits, mariages, concerts et entreprises.",
-		"priceRange": "€€"
-		}
-	</script>
-
 	<title>Nina Carducci</title>
 	<meta name="description" content="Photographe professionnelle à Bordeaux spécialisée dans les portraits, mariages, concerts et entreprises. Besoin de Shooting photo, retouches ou Album ? Reservez votre séance photo personnalisée dès aujourd'hui.">
 </head>
@@ -201,5 +172,82 @@
 		</div>
 	</div>
 </section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["Photographer", "LocalBusiness"],
+  "name": "Nina Carducci",
+  "image": "https://mistero1.github.io/Projet_OC4/assets/images/nina.webp",
+  "@id": "https://mistero1.github.io/Projet_OC4/#photographer",
+  "url": "https://mistero1.github.io/Projet_OC4/",
+  "telephone": "+33556677889",
+  "email": "contact@ninacarducci.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "68 avenue Alsace-Lorraine",
+    "addressLocality": "Bordeaux",
+    "postalCode": "33200",
+    "addressCountry": "FR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 44.8465781,
+    "longitude": -0.6091114
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "opens": "10:00",
+    "closes": "19:00"
+  }],
+  "priceRange": "€€",
+  "sameAs": [
+    "https://www.instagram.com/ninacarducci.photo/?hl=fr"
+  ],
+  "description": "Photographe professionnelle à Bordeaux spécialisée dans les portraits, mariages, concerts et entreprises.",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Services photographiques",
+    "itemListElement": [{
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Shooting photo",
+          "description": "Séance photo professionnelle en demi-journée",
+          "price": "350",
+          "priceCurrency": "EUR"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Retouches photo",
+          "description": "Retouche professionnelle par photo",
+          "price": "50",
+          "priceCurrency": "EUR"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Album photo",
+          "description": "Album personnalisé format A4",
+          "price": "400",
+          "priceCurrency": "EUR"
+        }
+      }
+    ]
+  }
+}
+</script>
 </body>
 </html>
